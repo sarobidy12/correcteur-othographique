@@ -1,0 +1,418 @@
+body{
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+#hero{
+  width: 100%;
+  height: 95vh;
+  background-size: cover;
+  background-image: url('/img/bg.png');
+  padding: 10vh 0;
+}
+
+#hero img{
+  width: 60vh;
+}
+.hero-container{
+  width: 80%;
+  margin: 10vh auto;
+}
+.hero-container h1{
+  font-family: 'Righteous', cursive;
+  font-size: 3vh;
+  color: white;
+  margin: 2vh 0;
+  border-bottom: 1vh solid ;
+  height: 7vh;
+  width: 5vh;
+}
+
+.hero-container p{
+  color: white;
+  font-size: 2vh;
+  font-family: 'Raleway', sans-serif;
+}
+
+#how{
+  margin: 0;
+  padding: 0;
+}
+
+#how h1{
+  font-family: 'Righteous', cursive;
+  color: rgb(2, 109, 242);
+  text-align: center;
+  height: 8vh;
+}
+
+.how-content{
+  height: 20vh;
+  margin: 0 auto;
+}
+
+.how-content h2{
+  font-family: 'Righteous', cursive;
+  font-size: 3vh;
+  margin: 2vh 0;
+  height: 7vh;
+}
+
+.how-content p{
+  font-size: 2vh;
+  color: #aaa;
+  font-family: 'Raleway', sans-serif;
+}
+
+footer{
+  width: 100%;
+  height: 55vh;
+  background-size: cover;
+  background-image: url('/img/footer.png');
+}
+
+footer img{
+  width: 55vh;
+}
+
+.footer{
+  position: relative;
+  top: 15vh;
+  height: 40vh;
+}
+
+.footer h1{
+  font-family: 'Righteous', cursive;
+  font-size: 3vh;
+  color: white;
+  margin: 2vh 0;
+  height: 5vh;
+}
+
+.footer p{
+  color: white;
+  font-size: 1.5vh;
+  font-family: 'Raleway', sans-serif;
+}
+
+nav{
+  width: 100%;
+  height: 7vh;
+  background-color: rgb(2, 109, 242);
+  position: fixed;
+  z-index: 10;
+}
+
+nav h1 a{
+  font-family: 'Righteous', cursive;
+  font-size: 3vh;
+  color: white;
+  margin: 3vh 0;
+  height: 5vh;
+  line-height: 2vh;
+  display: block;
+}
+
+nav h1 a:hover{
+  color: white;
+  text-decoration: none;
+}
+
+nav h1 a:focus{
+  color: white;
+  text-decoration: none;
+}
+
+nav ul{
+  margin: 1vh 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+nav ul li{
+  display: inline-table;
+  width: 15vh;
+  text-align: center;
+  margin: 0 1vh;
+}
+
+nav ul li a{
+  display: block;
+  width: 15vh;
+  height: 6vh;
+  line-height: 5vh;
+} 
+.login_nav{
+  display: block;
+  width: 15vh;
+  height: 5vh;
+  background-color: white;
+  border-radius: 1vh;
+  font-family: 'Righteous', cursive;
+  transition: 500ms;
+  border: 1px solid white;
+  color: rgb(2, 109, 242);
+
+}
+
+.login_nav:hover{
+  border: 1px solid white;
+  background-color: transparent;
+  color: white;
+  text-decoration: none;
+}
+
+.login_nav:focus{
+  text-decoration: none;
+}
+
+.sign_nav{
+  display: block;
+  width: 15vh;
+  height: 5vh;
+  background-color: transparent;
+  border-radius: 1vh;
+  font-family: 'Righteous', cursive;
+  transition: 500ms;
+  border: 1px solid white;
+  color: white;
+}
+
+.sign_nav:hover{
+  border: 1px solid white;
+  background-color: white;
+  color: rgb(2, 109, 242);
+  text-decoration: none;
+}
+
+.sign_nav:focus{
+  text-decoration: none;
+}
+.login_gb{
+  width: 100%;
+  height: 100vh;
+  background-image: url('/img/bg_login.png');
+  background-size: contain;
+}
+#login_register{
+  width: 90%;
+  margin: 0 auto;
+  position: relative;
+  top: 10vh;
+}
+
+
+#login_register img{
+  width: 65vh;
+}
+.login{
+  width: 50%;
+  margin: 10vh auto;
+}
+
+.login h1{
+  font-family: 'Righteous', cursive;
+  font-size: 3vh;
+  color: rgb(2, 109, 242);
+  margin: 2vh 0;
+  height: 5vh;
+}
+
+#login_register .form-group{
+  border: 1px solid;
+  height: 4vh;
+  padding: 0.5vh 1vh;
+}
+
+#login_register input{
+  border: none;
+  width: 80%;
+  height: 3vh;
+  margin: 0 1vh;
+}
+
+#login_register input:focus{
+  outline: none;
+}
+
+.btn_login{
+  width: 100%;
+  height: 4vh;
+  background-color: rgb(2, 109, 242);
+  border: none;
+  color: white;
+  font-family: 'Righteous', cursive;
+}
+#loader{
+  width: 50%;
+  display: none;
+}
+
+#loader .cs-loader {
+  width: 50%;
+}
+
+#loader .cs-loader-inner {
+  transform: translateY(-50%);
+  top: 0%;
+  position: absolute;
+  width: calc(100% - 200px);
+  color: #aaa;
+  padding: 0 100px;
+  text-align: center;
+  font-size: 3vh;
+}
+
+.cs-loader-inner span {
+  font-size: 20px;
+  opacity: 0;
+  display:inline-block;
+}
+
+@keyframes lol {
+  0% {
+    opacity: 0;
+    transform: translateX(-300px);
+  }
+  33% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+  66% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(300px);
+  }
+}
+
+@-webkit-keyframes lol {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-300px);
+  }
+  33% {
+    opacity: 1;
+    -webkit-transform: translateX(0px);
+  }
+  66% {
+    opacity: 1;
+    -webkit-transform: translateX(0px);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translateX(300px);
+  }
+}
+
+.cs-loader-inner span:nth-child(6) {
+  -webkit-animation: lol 3s infinite ease-in-out;
+  animation: lol 3s infinite ease-in-out;
+}
+
+.cs-loader-inner span:nth-child(5) {
+  -webkit-animation: lol 3s 100ms infinite ease-in-out;
+  animation: lol 3s 100ms infinite ease-in-out;
+}
+
+.cs-loader-inner span:nth-child(4) {
+  -webkit-animation: lol 3s 200ms infinite ease-in-out;
+  animation: lol 3s 200ms infinite ease-in-out;
+}
+
+.cs-loader-inner span:nth-child(3) {
+  -webkit-animation: lol 3s 300ms infinite ease-in-out;
+  animation: lol 3s 300ms infinite ease-in-out;
+}
+
+.cs-loader-inner span:nth-child(2) {
+  -webkit-animation: lol 3s 400ms infinite ease-in-out;
+  animation: lol 3s 400ms infinite ease-in-out;
+}
+
+.cs-loader-inner span:nth-child(1) {
+  -webkit-animation: lol 3s 500ms infinite ease-in-out;
+  animation: lol 3s 500ms infinite ease-in-out;
+}
+
+
+.hero-container a{
+  display: block;
+  width: 25vh;
+  height: 5vh;
+  background-color: white;
+  border-radius: 1vh;
+  font-family: 'Righteous', cursive;
+  transition: 500ms;
+  border: 0.5vh solid white;
+  color: rgb(2, 109, 242);
+  text-align: center;
+  font-size: 2vh;
+  line-height: 3.5vh;
+  float: left;
+  margin: 0 1vh 1vh 0;
+
+}
+
+
+.hero-container a:hover{
+  border: 0.5vh solid white;
+  background-color: transparent;
+  color: white;
+  text-decoration: none;
+}
+
+.hero-container a:focus{
+  text-decoration: none;
+}
+
+.hero-container button{
+  display: block;
+  width: 25vh;
+  height: 5vh;
+  background-color: transparent;
+  border-radius: 1vh;
+  font-family: 'Righteous', cursive;
+  transition: 500ms;
+  border: 0.5vh solid white;
+  color: white;
+  margin: 0 1vh;
+}
+
+#app{
+  width: 90%;
+  height: auto;
+  position: relative;
+  top: 10vh;
+  margin: 0 auto;
+}
+
+.avert{
+  width: 100%;
+  padding: 1vh;
+  text-align: start;
+  margin: 1vh 0;
+}
+
+.red{
+  background-color: red;
+}
+
+.bleu {
+  background-color: royalblue;
+}
+
+.yellow{
+  background-color: yellow;
+}
+
+.orange{
+  background-color: orangered;
+}
+
+.violet{
+  background-color: violet;
+}
